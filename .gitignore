@@ -1,1 +1,130 @@
+# ==================================
+# Python 项目基础忽略
+# ==================================
+# Python 字节码缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
 
+# C 扩展编译文件
+*.so
+
+# 分发/打包文件
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==================================
+# 虚拟环境 & 依赖配置
+# ==================================
+# 常见虚拟环境目录
+venv/
+env/
+ENV/
+.venv/
+.env/
+.conda/
+
+# poetry/pipenv 环境
+poetry.lock
+Pipfile
+Pipfile.lock
+
+# 环境变量文件（避免泄露密钥、本地路径）
+.env
+.env.local
+.env.*.local
+
+# ==================================
+# 机器学习/深度学习专属忽略
+# ==================================
+# 模型权重/ checkpoint 文件（大文件，不适合传到Git）
+*.pth
+*.pt
+*.pkl
+*.bin
+*.ckpt
+*.checkpoint
+
+# 数据集文件夹（避免上传大体积数据集）
+data/
+dataset/
+datasets/
+
+# 训练日志、TensorBoard 日志
+logs/
+runs/
+*.log
+*.out
+
+# 可视化输出、图片、结果文件
+output/
+results/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Jupyter Notebook 缓存
+.ipynb_checkpoints/
+*.ipynb
+*.pyc
+
+# ==================================
+# IDE/编辑器 个人配置
+# ==================================
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# PyCharm / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Vim/Neovim
+*.swp
+*.swo
+*~
+
+# ==================================
+# 系统缓存文件
+# ==================================
+# Mac 系统
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows 系统
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux 系统
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==================================
+# Git 辅助文件
+# ==================================
+.gitattributes
+.gitkeep
