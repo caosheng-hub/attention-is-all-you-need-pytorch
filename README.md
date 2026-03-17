@@ -2,8 +2,9 @@
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.10+-ee4c2c.svg)](https://pytorch.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-本项目严格遵循 Google 2017 年论文 [《Attention Is All You Need》](https://arxiv.org/abs/1706.03762)，**从零实现**完整的 Transformer 模型（编码器-解码器架构）。**无任何高层封装**（如 HuggingFace Transformers），所有模块均手动构建，并与论文公式一一对应。旨在深入理解大语言模型的核心基础。
+本项目严格遵循 Google 2017 年论文 [《Attention Is All You Need》](https://arxiv.org/abs/1706.03762)，**从零实现**完整的 Transformer 模型（编码器-解码器架构）。**无任何高层封装**（如 HuggingFace Transformers），所有模块均手动构建，并与论文公式一一对应，旨在深入理解大语言模型的核心基础。
 
 ## ✨ 核心亮点
 
@@ -14,8 +15,8 @@
   - ✅ Position-wise Feed-Forward Networks（论文 3.4 节）
   - ✅ 正弦余弦位置编码（论文 3.5 节）
   - ✅ Padding Mask 与 Sequence Mask（因果掩码）双机制
-- **模块化设计**：每个组件独立封装（'EncoderLayer'、'DecoderLayer'、'MultiHeadAttention'等），易于复用和二次开发。
-- **开箱可测**：每个模块都附有测试函数（如'test_encoder()'、'test_decoder()'），可直接运行验证。
+- **模块化设计**：每个组件独立封装（`EncoderLayer`、`DecoderLayer`、`MultiHeadAttention` 等），内部使用相对导入，符合 Python 包规范，易于复用和二次开发。
+- **开箱可测**：提供统一的演示脚本 `demo.py`，一键运行即可验证模型前向传播逻辑。
 
 ## 🚀 快速开始
 
