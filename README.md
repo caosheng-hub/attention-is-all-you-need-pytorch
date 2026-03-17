@@ -14,8 +14,8 @@
   - ✅ Position-wise Feed-Forward Networks（论文 3.4 节）
   - ✅ 正弦余弦位置编码（论文 3.5 节）
   - ✅ Padding Mask 与 Sequence Mask（因果掩码）双机制
-- **模块化设计**：每个组件独立封装（`EncoderLayer`、`DecoderLayer`、`MultiHeadAttention` 等），易于复用和二次开发。
-- **开箱可测**：每个模块都附有测试函数（如 `test_encoder()`、`test_decoder()`），可直接运行验证。
+- **模块化设计**：每个组件独立封装（'EncoderLayer'、'DecoderLayer'、'MultiHeadAttention'等），易于复用和二次开发。
+- **开箱可测**：每个模块都附有测试函数（如 'test_encoder()'、'test_decoder()'），可直接运行验证。
 
 ## 🚀 快速开始
 
