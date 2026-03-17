@@ -6,8 +6,8 @@ import torch.nn as nn
 import numpy as np
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
-from dm01_input import *
-from dm02_encoder import *
+from .dm01_input import *
+from .dm02_encoder import *
 # todo 1:定义解码器层（三个子层连接结构构成）
 class DecoderLayer(nn.Module):
     def __init__(self,size,self_attn,src_attn,feed_forward,dropout_p):
