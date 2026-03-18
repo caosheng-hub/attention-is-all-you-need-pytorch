@@ -58,6 +58,7 @@ Attention is All You Need
 
 ## 📂 项目结构（工程化拆分）
 
+```bash
 .
 ├── models/                    # 🧠 模型核心代码
 │   ├── __init__.py
